@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	
+</head>
+<style>
+
+	h1{
+		display: flex;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		color: #15cc61;
+		justify-content: center;
+}
+.form-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#submit-btn{
+	display: flex;
+	width: 100px;
+	background-color: #15cc61;
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+}
+</style>
+<body >
+	<h1>Registration Form</h1>
+	<div class="form-container">
+	<form method="POST" action="/register">
+		<label for="firstname">First Name:</label>
+		<input type="text" id="firstname" name="firstname" pattern="[A-Za-z]+"placeholder="Enter your First Name" required ><br><br>
+
+		<label for="lastname">Last Name:</label>
+		<input type="text" id="lastname" name="lastname" pattern="[A-Za-z]+"placeholder="Enter your Last Name" required><br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your Email"required><br><br>
+
+		<label for="country">Country: </label>
+		<select id="country" name="country" required>
+			<option value="">Select a country</option>
+			<option value="INDIA">INDIA</option>
+			<option value="AUSTRALIA">AUSTRALIA</option>
+			<option value="Mexico">Mexico</option>
+		</select><br><br>
+
+		<label for="state">State:</label>
+		<select id="state" name="state" required>
+			<option value="">Select a state</option>
+			<option value="INDIA">BIHAR</option>
+			<option value="AUSTRALIA">SOUTH AUSTRALIA</option>
+			<option value="California">amerika</option>
+			<option value="Texas">Texas</option>
+			<option value="New York">New York</option>
+		</select><br><br>
+
+		<label for="city">City:</label>
+		<select id="city" name="city" required>
+			<option value="">Select a city</option>
+			<option value="BIHAR">PATNA</option>
+			<option value="SOUTH AUSTRALIA">CLARE</option>
+			<option value="New York City">New York City</option>
+		</select><br><br>
+
+		<label>Gender:</label>
+		<input type="radio" id="male" name="gender" value="male" required>
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br><br>
+
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" name="dob" required><br><br>
+
+
+		<input type="submit" name="submit"value="SAVE" id="submit-btn">
+		
+	</form>
+</div>
+</body>
+</html>
